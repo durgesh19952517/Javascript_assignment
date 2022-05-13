@@ -1,0 +1,19 @@
+let array1 = [5,10,15];
+let array2 = ['A', 'B', 'C'];
+
+var newList = function(array1,array2)
+{
+  let l = array1.length+array2.length;
+  let r = [];
+  let j=0,k=0;
+  for(let i=0; i<l;i++) {
+    if(i%2==0) {
+      r[i]=array1[j++];
+    } else {
+      r[i]=array2[k++];
+    }
+  }
+  return r;
+}
+
+console.log(newList(array1,array2));
